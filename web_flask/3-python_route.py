@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-tarts a Flask web application
-=======
 #!/usr/bin/python3
 """
 starts a Flask web application
->>>>>>> 7f2f8a18096d38da318f5928fc86f9c9485b50ef
 """
 
 from flask import Flask
@@ -22,7 +18,6 @@ def hbnb():
     """returns HBNB"""
     return 'HBNB'
 
-<<<<<<< HEAD
 
 @app.route('/c/<text>', strict_slashes=False)
 def cisfun(text):
@@ -36,13 +31,5 @@ def pythoniscool(text='is cool'):
     """display “Python ”, followed by the value of the text variable"""
     return 'Python ' + text.replace('_', ' ')
 
-
-@app.route('/number/<int:n>', strict_slashes=False)
-def imanumber(n):
-    """display “n is a number” only if n is an integer"""
-    return "{:d} is a number".format(n)
-
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port='5000')
-=======
->>>>>>> 7f2f8a18096d38da318f5928fc86f9c9485b50ef
