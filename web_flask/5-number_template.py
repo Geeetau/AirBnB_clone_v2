@@ -1,13 +1,7 @@
-<<<<<<< HEAD
 tarts a Flask web application
-=======
-#!/usr/bin/python3
-"""
-starts a Flask web application
->>>>>>> 7f2f8a18096d38da318f5928fc86f9c9485b50ef
 """
 
-from flask import Flask
+from flask import Flask, render_template
 app = Flask(__name__)
 
 
@@ -22,7 +16,6 @@ def hbnb():
     """returns HBNB"""
     return 'HBNB'
 
-<<<<<<< HEAD
 
 @app.route('/c/<text>', strict_slashes=False)
 def cisfun(text):
@@ -42,7 +35,11 @@ def imanumber(n):
     """display “n is a number” only if n is an integer"""
     return "{:d} is a number".format(n)
 
+
+@app.route('/number_template/<int:n>', strict_slashes=False)
+def numbersandtemplates(n):
+    """display a HTML page only if n is an integer"""
+    return render_template('5-number.html', n=n)
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port='5000')
-=======
->>>>>>> 7f2f8a18096d38da318f5928fc86f9c9485b50ef
