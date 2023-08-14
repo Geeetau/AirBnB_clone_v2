@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-tarts a Flask web application
-=======
 #!/usr/bin/python3
 """
 starts a Flask web application
->>>>>>> 7f2f8a18096d38da318f5928fc86f9c9485b50ef
 """
 
 from flask import Flask
@@ -22,7 +18,6 @@ def hbnb():
     """returns HBNB"""
     return 'HBNB'
 
-<<<<<<< HEAD
 
 @app.route('/c/<text>', strict_slashes=False)
 def cisfun(text):
@@ -44,5 +39,3 @@ def imanumber(n):
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port='5000')
-=======
->>>>>>> 7f2f8a18096d38da318f5928fc86f9c9485b50ef
